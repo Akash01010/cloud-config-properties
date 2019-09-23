@@ -25,7 +25,13 @@ zuul:
       stripPrefix: false
   add-proxy-headers: true
   
-          
+feign:
+    hystrix:
+        enabled: true
+hystrix:
+    shareSecurityContext: true
+
+
 security:
   basic:
     enabled: false
