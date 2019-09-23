@@ -7,8 +7,9 @@ spring:
          port: 27017
          authentication-database: admin
          database: user_profile
-server:
-    port: 8095
+ribbon:
+   eureka:
+      enabled: true
 
 security:
   basic:
