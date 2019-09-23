@@ -18,7 +18,7 @@ eureka:
 zuul:
   routes:
     userprofile-service:
-        path: /users
+        path: /userprofile/**
     uaa-service:
       sensitiveHeaders:
       path: /uaa/**
