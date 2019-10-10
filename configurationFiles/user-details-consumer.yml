@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: user-details-consumer
+kafka:
+  bootstrap-servers: localhost:9092
+server:
+  port: 8899
+ 
+logging:
+  level:
+    com.sapient: DEBUG
+  file: log/my.log

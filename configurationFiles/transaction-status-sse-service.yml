@@ -1,14 +1,28 @@
 spring:
    application:
-      name: userprofile-service
+      name: transaction-status-sse-service
    data:
       mongodb:
          host: localhost
          port: 27017
-         authentication-database: admin
-         database: admin
+         database: transaction_log
 server:
-   port: 8090
+   port: 5858
+
+ 
+
+ribbon:
+   eureka:
+      enabled: true
+      
+feign:
+    hystrix:
+        enabled: true
+hystrix:
+    shareSecurityContext: true
+
+ 
+
 
 security:
   basic:
@@ -33,4 +47,3 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
-

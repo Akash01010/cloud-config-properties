@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: transaction-log-consumer-service
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      authentication-database: admin
+      database: transaction_log
+kafka:
+  bootstrap-servers: localhost:9092
+server:
+  port: 9988
+eureka:
+  client:
+    service-url:
+      default-zone: http://localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
+logging:
+  level:
+    com.sapient: DEBUG
+  file: log/my.log

@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: transaction-limit-stream
+kafka:
+  inputTopic: otp-success
+  outputSuccessTopic: transaction-limit-success
+  outputFailureTopic: transaction-limit-failure
+logging:
+  level:
+    com.sapient: DEBUG
+  file: log/my.log
+
+ 
+
+server:
+  port: 8999
