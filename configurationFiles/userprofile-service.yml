@@ -37,12 +37,12 @@ security:
       token-info-uri: http://localhost:8769/uaa/oauth/check_token
       
 eureka:
-   instance:
-     nonSecurePort: ${server.port}
-     preferIpAddress: true
-     leaseRenewalIntervalInSeconds: 5 #default is 30, recommended to keep default
-     metadataMap:
-       instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
-   client:
-     serviceUrl:
-       defaultZone: http://localhost:8761/eureka/
+  instance:
+      hostname: localhost
+      port: 8761
+      preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+    registerWithEureka: true
+    fetchRegistry: true
