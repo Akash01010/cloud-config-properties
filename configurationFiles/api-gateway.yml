@@ -54,7 +54,5 @@ security:
           -----END PUBLIC KEY-----
       serviceId: ${PREFIX:}resource
 logging:
-  level.org.springframework.security: DEBUG
-  
-  
-  
+  level.com.sapient: DEBUG
+  file: log/my.log
