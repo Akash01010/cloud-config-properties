@@ -1,6 +1,6 @@
 spring:
    application:
-      name: otp-producer-service
+      name: otp-producer
 
 server:
    port: 9040
