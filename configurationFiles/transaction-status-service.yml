@@ -7,13 +7,10 @@ spring:
       port: 27017
       authentication-database: admin
       database: transaction_log
+
 server:
   port: 5858
-logging:
-  level:
-    com:
-      sapient: DEBUG
-  file:log/my.log
+
 ribbon:
   eureka:
     enabled: true
@@ -21,10 +18,9 @@ ribbon:
 feign:
   hystrix:
     enabled: true
+    
 hystrix:
   shareSecurityContext: true
-
- 
 
 security:
   basic:
@@ -49,3 +45,9 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+
+logging:
+  level:
+    com:
+      sapient: DEBUG
+  file:log/my.log

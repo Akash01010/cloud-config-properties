@@ -1,15 +1,10 @@
-server:
-   port: 9000
-
- 
-
 spring:
    application:
       name: otp-service
-logging:
-  level:
-    com.sapient: DEBUG
-  file: log/my.log
+
+server:
+   port: 9000
+
 eureka:
   instance:
       hostname: localhost
@@ -22,10 +17,9 @@ eureka:
 feign:
     hystrix:
         enabled: true
+
 hystrix:
     shareSecurityContext: true
-
- 
 
 ribbon:
    eureka:
@@ -45,3 +39,8 @@ security:
           -----END PUBLIC KEY-----
       user-info-uri: http://localhost:8769/uaa/user/me
       token-info-uri: http://localhost:8769/uaa/oauth/check_token
+
+logging:
+  level:
+    com.sapient: DEBUG
+  file: log/my.log

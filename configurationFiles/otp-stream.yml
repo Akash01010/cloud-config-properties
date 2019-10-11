@@ -1,12 +1,15 @@
-server:
-  port: 8998
 spring:
   application:
     name: otp-stream
+
+server:
+  port: 8998
+
 kafka:
   inputTopic: validate-otp
   outputSuccessTopic: otp-success
   outputFailureTopic: otp-failure
+
 logging:
   level:
     com.sapient: DEBUG

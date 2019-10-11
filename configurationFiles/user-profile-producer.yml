@@ -40,3 +40,8 @@ security:
           -----END PUBLIC KEY-----
       user-info-uri: http://localhost:8769/uaa/user/me
       token-info-uri: http://localhost:8769/uaa/oauth/check_token
+
+logging:
+  level:
+    com.sapient: DEBUG
+  file: log/my.log

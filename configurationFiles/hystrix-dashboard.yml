@@ -1,2 +1,11 @@
+spring:
+  application:
+    name: hystrix-dashboard
+
 server:
   port: ${PORT:8010}
+
+logging:
+  level:
+    com.sapient: DEBUG
+  file: log/my.log

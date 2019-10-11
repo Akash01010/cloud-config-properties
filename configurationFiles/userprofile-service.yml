@@ -51,3 +51,9 @@ eureka:
       defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
     registerWithEureka: true
     fetchRegistry: true
+
+logging:
+  level:
+    com.sapient: DEBUG
+  file: log/my.log
+

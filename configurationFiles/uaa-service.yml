@@ -24,4 +24,7 @@ security:
   ignored: /css/**,/js/**,/favicon.ico,/webjars/**
 
 logging:
-  level.org.springframework.security: DEBUG
+  level:
+    com.sapient: DEBUG
+  file: log/my.log
+
