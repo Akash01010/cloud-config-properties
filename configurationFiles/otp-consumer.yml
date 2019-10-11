@@ -4,7 +4,7 @@ spring:
 kafka:
   bootstrap-servers: localhost:9092
 server:
-  port: 9988
+  port: 9977
 eureka:
   client:
     service-url:
