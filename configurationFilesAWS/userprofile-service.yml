@@ -3,7 +3,7 @@ spring:
       name: userprofile-service
    data:
       mongodb:
-         host: 10.0.1.164
+         host: localhost
          port: 27017
          authentication-database: admin
          database: user_profile
