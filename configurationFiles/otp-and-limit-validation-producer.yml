@@ -1,6 +1,6 @@
 spring:
   application:
-    name: kafka-producer-service
+    name: otp-and-limit-validation-producer
 
 server:
   port: 9050
