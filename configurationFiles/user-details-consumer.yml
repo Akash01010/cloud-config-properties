@@ -1,10 +1,10 @@
 spring:
   application:
-    name: user-details-consumer
+    name: userprofile-consumer
 kafka:
   bootstrap-servers: localhost:9092
 server:
-  port: 8899
+  port: 9966
  
 logging:
   level:
