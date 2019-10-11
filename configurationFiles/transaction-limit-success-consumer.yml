@@ -1,6 +1,6 @@
 spring:
   application:
-    name: otp-success-topic-consumer
+    name: transaction-limit-success-consumer
 
 server:
   port: 9999
