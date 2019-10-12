@@ -7,7 +7,7 @@ spring:
     
 eureka:
   instance:
-      hostname: 10.0.1.211
+      hostname: 10.0.3.92
       port: 8761
       preferIpAddress: true
   client:
