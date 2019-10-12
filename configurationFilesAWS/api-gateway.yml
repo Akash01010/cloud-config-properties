@@ -7,12 +7,13 @@ spring:
     
 eureka:
   instance:
-      hostname: 10.0.3.92
-      port: 8761
+      hostname: hoodie
+      port: 8765
       preferIpAddress: true
+      ip-address: 10.0.3.92
   client:
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+      defaultZone: http://10.0.3.92:8761/eureka/
 
 
 
