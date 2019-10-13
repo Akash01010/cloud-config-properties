@@ -1,9 +1,6 @@
 spring:
   application:
     name: api-gateway
-    
-server:
-  port: ${PORT:${SERVER_PORT:0}}
   
 ribbon:
    eureka:
