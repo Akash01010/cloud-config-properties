@@ -9,14 +9,6 @@ server:
   context-path: /uaa
   use-forward-headers: false
 
-eureka:
-  instance:
-      hostname: localhost
-      preferIpAddress: true
-  client:
-    serviceUrl:
-      defaultZone: http://10.0.3.92:8761/eureka/
-
 security:
   basic:
     enabled: false
@@ -24,5 +16,17 @@ security:
     password: password
   ignored: /css/**,/js/**,/favicon.ico,/webjars/**
 
-logging:
-  level.org.springframework.security: DEBUG
+server:  
+  port: ${PORT:${SERVER_PORT:0}}
+
+ribbon:
+   eureka:
+      enabled: true
+      
+eureka:
+  instance:
+      hostname: localhost
+      preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://10.0.3.92:8761/eureka/
