@@ -19,6 +19,7 @@ feign:
 
 hystrix:
     shareSecurityContext: true
+    command.default.execution.isolation.thread.timeoutInMilliseconds: 210000
 
 eureka:
   instance:
