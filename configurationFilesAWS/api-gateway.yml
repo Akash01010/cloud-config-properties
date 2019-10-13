@@ -4,16 +4,6 @@ server:
 spring:
    application:
       name: api-gateway
-    
-eureka:
-  instance:
-      hostname: localhost
-      preferIpAddress: true
-  client:
-    serviceUrl:
-      defaultZone: http://10.0.3.92:8761/eureka/
-
-
 
 #     userprofile-service:
 #         path: /userprofile/**
@@ -55,5 +45,11 @@ security:
 logging:
   level.org.springframework.security: DEBUG
   
-  
+eureka:
+  instance:
+      hostname: localhost
+      preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://10.0.3.92:8761/eureka/  
   
