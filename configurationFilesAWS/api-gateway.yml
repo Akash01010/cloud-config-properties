@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: api-gateway
+    
+server:
+  port: ${PORT:${SERVER_PORT:0}}
+  
+ribbon:
+   eureka:
+      enabled: true
+      
+eureka:
+  instance:
+      hostname: localhost
+      preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://10.0.3.92:8761/eureka/
