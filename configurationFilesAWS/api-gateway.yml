@@ -48,7 +48,7 @@ logging:
 eureka:
   instance:
       hostname: localhost
-      port: $(server.port)
+      port: 8765
       preferIpAddress: true
   client:
     serviceUrl:
