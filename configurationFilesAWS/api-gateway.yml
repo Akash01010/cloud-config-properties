@@ -1,13 +1,7 @@
 spring:
-   application:
+  application:
       name: api-gateway
       
-server:
-  port: ${PORT:${SERVER_PORT:0}}
-
-#     userprofile-service:
-#         path: /userprofile/**
-        
 zuul:
   routes:
     uaa-service:
@@ -21,7 +15,6 @@ feign:
         enabled: true
 hystrix:
     shareSecurityContext: true
-
 
 security:
   basic:
@@ -44,12 +37,14 @@ security:
       serviceId: ${PREFIX:}resource
 logging:
   level.org.springframework.security: DEBUG
-  
+    
+server:
+  port: ${PORT:${SERVER_PORT:0}}
+
 eureka:
   instance:
       hostname: localhost
       preferIpAddress: true
   client:
     serviceUrl:
-      defaultZone: http://10.0.3.92:8761/eureka/  
-  
+      defaultZone: http://10.0.3.92:8761/eureka/
