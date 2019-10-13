@@ -1,5 +1,5 @@
 server:
-    port: 8765
+    port: ${PORT:${SERVER_PORT:0}}
 
 spring:
    application:
@@ -7,8 +7,6 @@ spring:
     
 eureka:
   instance:
-      hostname: hoodie
-      port: 8765
       preferIpAddress: true
       ip-address: 10.0.3.92
   client:
