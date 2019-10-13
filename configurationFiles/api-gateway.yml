@@ -22,7 +22,7 @@ hystrix:
 
 eureka:
   instance:
-      hostname: localhost
+      hostname: 10.0.1.203
       port: 8761
       preferIpAddress: true
   client:
