@@ -7,7 +7,7 @@ server:
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: 10.0.1.203
     port: ${server.port}
     preferIpAddress: true
   client:
