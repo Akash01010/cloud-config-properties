@@ -37,9 +37,6 @@ security:
       serviceId: ${PREFIX:}resource
 logging:
   level.org.springframework.security: DEBUG
-    
-server:
-  port: ${PORT:${SERVER_PORT:0}}
 
 eureka:
   instance:
