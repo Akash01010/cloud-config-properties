@@ -2,19 +2,12 @@ spring:
   application:
     name: uaa-service
 
+server:  
+  port: ${PORT:${SERVER_PORT:0}}
+
 server:
-  port: 8769
   context-path: /uaa
   use-forward-headers: false
-
-eureka:
-  instance:
-      hostname: 10.0.1.164
-      port: 8761
-      preferIpAddress: true
-  client:
-    serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
 
 security:
   basic:
@@ -23,5 +16,14 @@ security:
     password: password
   ignored: /css/**,/js/**,/favicon.ico,/webjars/**
 
-logging:
-  level.org.springframework.security: DEBUG
+ribbon:
+   eureka:
+      enabled: true
+      
+eureka:
+  instance:
+      hostname: localhost
+      preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://10.0.3.92:8761/eureka/
