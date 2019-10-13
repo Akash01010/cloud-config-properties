@@ -43,9 +43,9 @@ security:
       
 eureka:
   instance:
-      hostname: localhost
+      hostname: 10.0.1.203
       port: 8761
-      preferIpAddress: true
+      preferIpAddress: false
   client:
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
