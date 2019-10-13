@@ -2,7 +2,7 @@ spring:
   application:
     name: uaa-service
 
-server:  
+server:
   port: ${PORT:${SERVER_PORT:0}}
 
 server:
