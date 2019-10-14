@@ -1,7 +1,7 @@
 spring:
   application:
     name: uaa-service
-
+    
 server:
   port: 0
   
@@ -29,4 +29,3 @@ logging:
   level:
     com.sapient: DEBUG
   file: log/my.log
-
