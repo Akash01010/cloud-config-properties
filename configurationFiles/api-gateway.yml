@@ -17,7 +17,15 @@ feign:
         enabled: true
 hystrix:
     shareSecurityContext: true
-
+hystrix:
+  metrics:
+    enabled: true
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 12000
 security:
   basic:
     enabled: false
