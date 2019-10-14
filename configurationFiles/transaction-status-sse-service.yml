@@ -3,7 +3,7 @@ spring:
       name: transaction-status-sse-service
    data:
       mongodb:
-         host: localhost
+         host: 10.0.1.110
          port: 27017
          database: transaction_log
          
