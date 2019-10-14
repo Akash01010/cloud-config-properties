@@ -1,7 +1,12 @@
 spring:
    application:
       name: otp-service
-      
+   cache:
+      type: redis
+   redis:
+      host: 10.0.1.110
+      port: 6379
+   
 eureka:
   instance:
       hostname: 10.0.1.104
