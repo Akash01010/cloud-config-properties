@@ -3,7 +3,7 @@ spring:
     name: uaa-service
     
 server:
-  port: 0
+  port: ${PORT:${SERVER_PORT:0}}
   
 server:
   context-path: /uaa
