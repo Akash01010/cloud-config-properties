@@ -8,8 +8,6 @@ spring:
       authentication-database: admin
       database: transaction_log
 
-server:
-  port: 5858
 
 ribbon:
   eureka:
@@ -39,7 +37,7 @@ security:
       
 eureka:
   instance:
-    hostname: localhost
+    hostname: 10.0.1.104
     port: 8761
     preferIpAddress: true
   client:
