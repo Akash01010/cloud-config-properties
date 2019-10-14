@@ -3,13 +3,12 @@ spring:
     name: uaa-service
 
 server:
-  port: ${PORT:${SERVER_PORT:0}}
   context-path: /uaa
   use-forward-headers: false
 
 eureka:
   instance:
-      hostname: localhost
+      hostname: 10.0.1.104
       port: 8761
       preferIpAddress: true
   client:
