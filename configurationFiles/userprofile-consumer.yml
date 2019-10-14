@@ -14,9 +14,6 @@ eureka:
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
       
-server:
-  port: 9966
- 
 logging:
   level:
     com.sapient: DEBUG
