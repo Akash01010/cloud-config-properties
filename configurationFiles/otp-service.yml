@@ -1,10 +1,7 @@
 spring:
    application:
       name: otp-service
-
-server:
-   port: 9000
-
+      
 eureka:
   instance:
       hostname: localhost
