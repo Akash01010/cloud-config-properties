@@ -2,7 +2,7 @@ spring:
    application:
       name: otp-producer
 kafka:
-  bootstrap-servers: localhost:9092
+  bootstrap-servers: 10.0.1.108:9092
 
 logging:
   level:
@@ -10,7 +10,7 @@ logging:
   file: log/my.log
 eureka:
   instance:
-      hostname: localhost
+      hostname: 10.0.1.104
       port: 8761
       preferIpAddress: true
   client:
