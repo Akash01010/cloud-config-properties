@@ -6,9 +6,6 @@ kafka:
   bootstrap-servers: localhost:9092
   topic: otp-input20
 
-server:
-  port: 9060
-
 eureka:
   client:
     service-url:
