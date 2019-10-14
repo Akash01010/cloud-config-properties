@@ -3,8 +3,6 @@ spring:
     name: otp-consumer
 kafka:
   bootstrap-servers: localhost:9092
-server:
-  port: 9977
 eureka:
   client:
     service-url:
