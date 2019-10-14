@@ -2,9 +2,6 @@ spring:
   application:
     name: otp-and-limit-validation-producer
 
-server:
-  port: 9050
-
 kafka:
   bootstrap-servers: localhost:9092
   otp-validate-topic: validate-otp
