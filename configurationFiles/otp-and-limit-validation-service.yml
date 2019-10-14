@@ -2,9 +2,6 @@ spring:
    application:
       name: otp-and-limit-validation-service
 
-server:
-   port: 8000
-
 ribbon:
    eureka:
       enabled: true
