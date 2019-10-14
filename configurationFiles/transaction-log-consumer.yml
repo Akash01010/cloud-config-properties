@@ -9,12 +9,12 @@ spring:
       database: transaction_log
       
 kafka:
-  bootstrap-servers: localhost:9092
+  bootstrap-servers: 10.0.1.108:9092
 
 eureka:
   client:
     service-url:
-      default-zone: http://localhost:8761/eureka
+      default-zone: http://10.0.1.104:8761/eureka
   instance:
     prefer-ip-address: true
 
