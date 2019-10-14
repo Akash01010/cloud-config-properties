@@ -3,6 +3,7 @@ spring:
     name: uaa-service
 
 server:
+  port: ${PORT:${SERVER_PORT:0}}
   context-path: /uaa
   use-forward-headers: false
 
