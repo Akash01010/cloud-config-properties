@@ -2,9 +2,6 @@ spring:
   application:
     name: transaction-limit-stream
 
-server:
-  port: 8999
-
 kafka:
   inputTopic: otp-success
   outputSuccessTopic: transaction-limit-success
