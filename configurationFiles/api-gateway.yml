@@ -23,9 +23,9 @@ hystrix:
 
 eureka:
   instance:
-      hostname: 10.0.1.203
+      hostname: localhost
       port: 8761
-      preferIpAddress: false
+      preferIpAddress:true
   client:
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
