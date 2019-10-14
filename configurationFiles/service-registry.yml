@@ -5,18 +5,18 @@ spring:
 server:
   port: 8761
 
-# eureka:
-#   instance:
-#     hostname: 10.0.1.203
-#     port: ${server.port}
-#     preferIpAddress: true
-#   client:
-#     registerWithEureka: false
-#     fetchRegistry: false
-#     serviceUrl:
-#       defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-#   server:
-#     waitTimeInMsWhenSyncEmpty: 0
+eureka:
+  instance:
+    hostname: 10.0.1.203
+    port: ${server.port}
+    preferIpAddress: true
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
 
 logging:
   level:
