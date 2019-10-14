@@ -6,9 +6,7 @@ spring:
          host: localhost
          port: 27017
          database: transaction_log
-server:
-   port: 5858
-
+         
 ribbon:
    eureka:
       enabled: true
@@ -18,9 +16,6 @@ feign:
         enabled: true
 hystrix:
     shareSecurityContext: true
-
- 
-
 
 security:
   basic:
@@ -39,7 +34,7 @@ security:
       
 eureka:
   instance:
-      hostname: localhost
+      hostname: 10.0.1.104
       port: 8761
       preferIpAddress: true
   client:
