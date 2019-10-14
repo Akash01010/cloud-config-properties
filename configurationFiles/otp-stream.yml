@@ -15,7 +15,8 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
-
+redis:
+  server: 10.0.1.110
 logging:
   level:
     com.sapient: DEBUG
