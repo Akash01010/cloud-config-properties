@@ -16,6 +16,8 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
+    registerWithEureka: true
+    fetchRegistry: true
 redis:
   server: 10.0.1.110
 logging:
