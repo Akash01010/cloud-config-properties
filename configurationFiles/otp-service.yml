@@ -46,3 +46,10 @@ logging:
   level:
     com.sapient: DEBUG
   file: log/my.log
+ 
+expiryTimeInSeconds : 300
+OTP_LENGTH : 6
+KAFKA_PRODUCER_POSTMAP : ""
+keyToStoreData : "Users"
+ORIGINATION_HOSTNAME : ""
+SERVICE_NAME : ""
