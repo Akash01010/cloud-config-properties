@@ -9,7 +9,7 @@ spring:
       database: transaction_log
       
 kafka:
-  bootstrap-servers: 10.0.1.108:9092
+  bootstrap-servers: 10.0.1.6:9092,10.0.1.253:9092,10.0.1.174:9092
 
 eureka:
   client:
