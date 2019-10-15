@@ -19,7 +19,7 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
 redis:
-  server: 10.0.1.110
+  server: "10.0.1.110"
   port: 6379
 logging:
   level:
