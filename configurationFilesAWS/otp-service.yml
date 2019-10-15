@@ -1,10 +1,12 @@
 spring:
    application:
       name: otp-service
-
-server:
-   port: 9000
-
+   cache:
+      type: redis
+   redis:
+      host: 10.0.1.110
+      port: 6379
+   
 eureka:
   instance:
       hostname: localhost
@@ -44,3 +46,10 @@ logging:
   level:
     com.sapient: DEBUG
   file: log/my.log
+ 
+expiryTimeInSeconds : 300
+OTP_LENGTH : 6
+KAFKA_PRODUCER_POSTMAP : ""
+keyToStoreData : "Users"
+ORIGINATION_HOSTNAME : ""
+SERVICE_NAME : ""
